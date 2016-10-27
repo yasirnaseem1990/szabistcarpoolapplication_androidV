@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dip">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="Register"
+                android:textSize="25dip"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark">
+                <!-- User Name Text View -->
+            </TextView>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtuserName"
+                android:hint="Enter Your UserName"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="User Email"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtuserEmail"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Your Email"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="User Password"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtuserPassword"
+                android:inputType="textPassword"
+                android:hint="Enter Your Password"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="CNIC #"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtuserCNIC"
+                android:inputType="text"
+                android:hint="Enter Your CNIC#"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Mobile No"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtuserMobile"
+                android:inputType="phone"
+                android:hint="Enter Your Mobile #"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="University Registration #"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtuniversityRegistration"
+                android:inputType="number"
+                android:hint="University Registration #"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Current Semester"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcurrentSemester"
+                android:inputType="text"
+                android:hint="Current Semester"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="Department"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtuserDepartment"
+                android:inputType="text"
+                android:hint="Enter Your Department"
+                android:textColorHint="@color/colorAccent"/>
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="Register"/>
+            <Button
+                android:id="@+id/btnLinkToLoginScreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@null"
+                android:onClick="navigatetoLoginActivity"
+                android:text="Login"
+                android:textColor="#228b22"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvStatus"
+                android:text="Small Text"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

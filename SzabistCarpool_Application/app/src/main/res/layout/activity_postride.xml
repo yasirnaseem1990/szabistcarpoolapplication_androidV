@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dip">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="Post Ride"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ride Title"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark">
+            <!-- User Name Text View -->
+        </TextView>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtrideTitle"
+            android:hint="Enter Your UserName"
+            android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Fair/km"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtfair"
+                android:hint="Enter Your Fair"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick a Data Time"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtdatePicker"
+                android:inputType="date"
+                android:hint="Select Data and Time"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Source Location"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Please enter your Source"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/colorAccent">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination Location"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Please enter your Destination"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/colorAccent">
+
+                <requestFocus />
+            </AutoCompleteTextView>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Seats"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txttotalSeats"
+                android:hint="Total Seats"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Available Seats"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtavialableSeats"
+                android:hint="Available Seats"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Name"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcarName"
+                android:hint="Enter Your Fair"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Car Model"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcarModel"
+                android:hint="Car Model"
+                android:textColorHint="@color/colorAccent"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Information"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtadditionalInformation"
+                android:hint="Enter Your Fair"
+                android:textColorHint="@color/colorAccent"/>
+            <Button
+                android:id="@+id/btnpostRide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@null"
+                android:text="Post Ride"
+                android:textColor="#228b22"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
